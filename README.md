@@ -1,7 +1,3 @@
-# Save the README.md content for GitHub repository
-readme_path = Path("/mnt/data/likavery_export_final/README.md")
-readme_content = """# LIKAVERY - Landing Page
-
 Ce dépôt contient la landing page officielle du service LIKAVERY, qui facilite l’accès aux médicaments en Côte d’Ivoire via un service de livraison conforme et sécurisé.
 
 ## ✨ Fonctionnalités principales
