@@ -3,5 +3,190 @@
 
 <head>
     <meta charset="UTF-8">
-    ...
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LIKAVERY facilite l'accès aux médicaments en Côte d'Ivoire. Un service fiable et conforme, en collaboration avec les officines locales.">
+    <title>LIKAVERY - Accès fiable aux médicaments</title>
+    <style>
+body {
+    animation: backgroundMove 20s ease-in-out infinite alternate;
+    background-image: radial-gradient(circle at top right, rgba(0, 105, 92, 0.05), transparent 60%), radial-gradient(circle at bottom left, rgba(0, 105, 92, 0.05), transparent 60%);
+    font-family: Aptos, 'Inter', sans-serif;
+    background-color: #F2FDFB;
+    color: #263238;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    max-width: 460px;
+    margin: auto;
+    padding: 25px 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2.8em;
+    color: #004D40;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.subheading {
+    font-size: 1.1em;
+    color: #00695C;
+    font-weight: 500;
+    margin: 0.2em 0 1.2em;
+}
+.cta {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #00695C;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.cta:hover {
+    box-shadow: 0 0 0 4px rgba(0, 105, 92, 0.2);
+    transform: translateY(-1px);
+    background-color: #33c4aa;
+}
+.footnote {
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #607D8B;
+}
+.compliance-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #e0f2f1;
+    color: #00695C;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.compliance-link:hover {
+    background-color: #b2dfdb;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .whatsapp-button {
+        display: block;
+    }
+}
+.spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    vertical-align: middle;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes backgroundMove {
+    0% {
+        background-position: top right, bottom left;
+    }
+    100% {
+        background-position: top left, bottom right;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+    100% {
+        background-position: top left, bottom right;
+    }
+}
+.desktop-only { display: none; }
+@media only screen and (min-width: 769px) { .desktop-only { display: block !important; } }
+</style>
+<script>
+    function hideBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.style.transition = 'opacity 0.5s ease';
+            banner.style.opacity = '0';
+            setTimeout(() => banner.style.display = 'none', 500);
+        }
+    }
+    setTimeout(() => {
+        const banner = document.getElementById('cookieBanner');
+        if (banner && !banner.dataset.dismissed) {
+            banner.style.opacity = '0';
+            setTimeout(() => banner.style.display = 'none', 500);
+        }
+    }, 10000);
+    setTimeout(() => {
+        const pharmaBubble = document.getElementById('bubble-pharma');
+if (pharmaBubble && !localStorage.getItem('bubbleDismissed')) pharmaBubble.style.display = 'block';
+    }, 8000);
+</script>
+</head>
+
+<body>
+<div class="container" style="padding-top: 60px; padding-bottom: 40px;">
+  <h1 style="font-size: 2.8em; font-weight: 700; margin-bottom: 0.2em; color: #004D40; letter-spacing: -1px;">LIKAVERY</h1>
+  <p class="subheading">Un scan. Une pharmacie. Une livraison.</p>
+  
+  <div style="display: flex; flex-direction: column; gap: 32px;">
+    <div style="padding: 24px; background: #f9fdfc; border-radius: 12px; border: 1px solid #e0f2f1; text-align: left;">
+      <h2 style="font-size: 1.3em; color: #00695C; margin-top: 0;"><span aria-hidden="true">👤</span> Pour les patients</h2>
+      <p style="font-size: 0.95em; line-height: 1.6em; color: #37474F;">
+        Plus besoin de faire la tournée des pharmacies. On trouve celle qui a tout, on vous livre, et vous restez serein.
+      </p>
+      <style>@media only screen and (max-width: 480px) {.cta, .compliance-link {width: 100%; text-align: center;}}</style>
+<a class="cta" href="https://tally.so/r/wkrR5M" target="_blank" rel="noopener noreferrer" onclick="this.innerHTML='<span class=\'spinner\'></span> Chargement…'; this.style.opacity='0.6'">Rejoindre la phase de test</a>
+    </div>
+
+    <div style="padding: 24px; background: #eefaf8; border-radius: 12px; border: 1px solid #e0f2f1; text-align: left;">
+      <h2 style="font-size: 1.3em; color: #00695C; margin-top: 0;"><span aria-hidden="true">🏥</span> Pour les pharmacies</h2>
+      <p style="font-size: 0.95em; line-height: 1.6em; color: #37474F;">
+        Rejoignez notre réseau pour proposer un service de livraison moderne, sécurisé et conforme, sans perturber vos opérations. Vous restez maître de la dispensation — nous assurons la logistique, la traçabilité et le support.
+      </p>
+      <a class="compliance-link" href="https://tally.so/r/w7rV5M" target="_blank" rel="noopener noreferrer" onclick="this.innerHTML='<span class=\'spinner\'></span> Chargement…'; this.style.opacity='0.6'">Devenir partenaire</a>
+    </div>
+  </div>
+
+  <p class="footnote">🔐 Nous traitons vos données comme vos traitements : avec soin, confidentialité et respect de la loi ivoirienne.</p>
+
+        
+
+        
+    </div>
+<div style="margin-top: 30px; padding: 16px; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 8px; font-size: 0.85em; color: #856404;">
+        En soumettant vos informations, vous acceptez que LIKAVERY les utilise uniquement dans le cadre du test du service. Conformément à la loi ivoirienne sur la protection des données (Loi n° 2013-450), vous pouvez demander leur suppression à tout moment.
+    </div>
+<a href="https://wa.me/33768373795?text=Bonjour%2C%20je%20souhaite%20devenir%20partenaire%20LIKAVERY" target="_blank" class="whatsapp-button" style="position: fixed; bottom: 80px; right: 20px; z-index: 1000;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50" height="50" style="border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+</a>
+
+<div id="cookieBanner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(38, 50, 56, 0.95); color: white; text-align: center; padding: 12px 16px; font-size: 0.85em; display: flex; justify-content: center; align-items: center; gap: 12px; opacity: 1; transition: opacity 0.5s ease;">
+  <span>LIKAVERY respecte votre vie privée. <a href="/LIKAVERY.pdf" style="color: #80cbc4; text-decoration: underline;">En savoir plus</a></span>
+  <button onclick="hideBanner()" style="background-color: #80cbc4; color: #000; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">OK</button>
+</div>
+<div id="bubble-pharma" class="desktop-only" style="position: fixed; bottom: 140px; right: 20px; background-color: #00695C; color: white; padding: 12px 16px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-size: 0.85em; display: none; z-index: 999; animation: fadeIn 0.5s ease forwards; max-width: 280px;; position: fixed; bottom: 140px; right: 20px; background-color: #00695C; color: white; padding: 12px 16px 16px 16px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-size: 0.85em; display: none; z-index: 999; animation: fadeIn 0.5s ease forwards; max-width: 280px;">
+  <button onclick="localStorage.setItem('bubbleDismissed','true'); document.getElementById('bubble-pharma').style.display='none'" style="position: absolute; top: 4px; right: 8px; background: transparent; border: none; color: #ffffff; font-weight: bold; cursor: pointer; font-size: 1em;">✕</button>
+  <span>Êtes-vous une pharmacie ? <a href="https://tally.so/r/nrqpz2" target="_blank" style="color: #b2dfdb; text-decoration: underline; font-weight: 500;">Devenez partenaire</a></span>
+  
+</div>
+</body>
 </html>
